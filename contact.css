@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', 'sans-serif';
+    letter-spacing: 1px;
+}
+h2{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(205, 4, 255);
+}
+h3{
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+}
+h4{
+    color: bisque;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+#contact{
+    background-image: url('background.webp') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    background-color: rgba(9, 5, 44, 0.692);
+    background-blend-mode: overlay;
+    color: white;
+    min-height: 100vh;
+}
+.container{
+    width: 800px;
+    margin: auto;
+    max-width: 100%;
+}
+.contacts{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px;
+}
+
+.left-area{
+    padding: 30px;
+    overflow: hidden;
+}
+.contact-list{
+    display: grid;
+    gap: 30px;
+}
+.contact-media{
+    display: flex;
+    gap: 20px;
+}
+.contact-media i{
+    padding-top: 5px;
+}
+.contact-link{
+    text-decoration: none;
+    color: white;
+}
+.right-area{
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#form-input{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+button{
+    align-self: flex-start;
+    background-color: rgb(167, 104, 226);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.input{
+    padding: 10px;
+    border: 2px solid rgb(238, 236, 236);
+    border-radius: 10px;
+    font-family: 'Poppins', 'sans-serif';
+    cursor: pointer;
+}
+
+@media only screen and (max-width:768px){
+    .contacts{     
+        grid-template-columns: repeat(1,1fr);   
+    }
+}
